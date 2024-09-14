@@ -35,6 +35,7 @@ app.post('/posts/:id/comments', async (req, res) => {
 });
 
 // lets receive the event from the event bus 
+// dummy comment
 app.post('/events', async (req, res) => {
     console.log('Received Event:', req.body.type);
 
